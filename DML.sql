@@ -44,7 +44,7 @@ INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_do
 INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (13, 13, 1, 'Taylor Swift', TO_DATE('1987-07-07', 'YYYY-MM-DD'), 'Chicago');
 INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (14, 14, 1, 'Paul Pogba', TO_DATE('1991-04-18', 'YYYY-MM-DD'), 'Dhaka');
 INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (15, 15, 1, 'Jude Bellingham', TO_DATE('1927-09-30', 'YYYY-MM-DD'), 'Houston');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (16, 1, 1, 'Oliver Johnson', TO_DATE('1997-12-08', 'YYYY-MM-DD'), 'New York');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (16, 4, 4, 'Oliver Johnson', TO_DATE('1997-12-08', 'YYYY-MM-DD'), 'New York');
 INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (17, 2, 2, 'James Rodriguez', TO_DATE('1984-06-22', 'YYYY-MM-DD'), 'Los Angeles');
 INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (18, 3, 3, 'Lucas Anderson', TO_DATE('1990-03-16', 'YYYY-MM-DD'), 'Chicago');
 INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (19, 4, 4, 'Harry Kane', TO_DATE('1981-08-11', 'YYYY-MM-DD'), 'Dhaka');
@@ -76,7 +76,7 @@ INSERT INTO employ (doctor_id, hospital_id) VALUES (15, 3);
 -- Inserting dummy data into the "medicine" table
 INSERT INTO medicine (medicine_id, medicine_name, disease_id, price) VALUES (1, 'Medicine A', 1, 10.99);
 INSERT INTO medicine (medicine_id, medicine_name, disease_id, price) VALUES(2, 'Medicine B', 1, 15.99);
-INSERT INTO medicine (medicine_id, medicine_name, disease_id, price) VALUES(3, 'Medicine C', 3, 8.99);
+INSERT INTO medicine (medicine_id, medicine_name, disease_id, price) VALUES(3, 'Medicine C', 4, 8.99);
 INSERT INTO medicine (medicine_id, medicine_name, disease_id, price) VALUES(4, 'Medicine D', 4, 12.99);
 INSERT INTO medicine (medicine_id, medicine_name, disease_id, price) VALUES(5, 'Medicine E', 5, 9.99);
 INSERT INTO medicine (medicine_id, medicine_name, disease_id, price) VALUES(6, 'Medicine F', 6, 11.99);
@@ -104,11 +104,11 @@ SELECT disease_id, COUNT(patient_id) AS patient_count
 FROM patient
 GROUP BY disease_id;
 
---Retrieve the diseases with more than 5 patients from the "patient" table using the HAVING clause.
+--Retrieve the diseases with more than 2 patients from the "patient" table using the HAVING clause.
 SELECT disease_id, COUNT(patient_id) AS patient_count
 FROM patient
 GROUP BY disease_id
-HAVING COUNT(patient_id) > 5;
+HAVING COUNT(patient_id) > 2;
 
 --Retrieve the names of patients who have a disease that is of type "Chronic" from the "patient" and "disease" tables using a nested subquery.
 SELECT patient_name
