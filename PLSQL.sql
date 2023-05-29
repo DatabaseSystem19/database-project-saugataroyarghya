@@ -7,8 +7,7 @@ DECLARE
     v_disease_name disease.disease_name%TYPE;
     v_avg_price NUMBER(8,2);
 BEGIN
-    FOR disease_rec IN c_diseases LOOP;
-    .3
+    FOR disease_rec IN c_diseases LOOP
         v_disease_id := disease_rec.disease_id;
         v_disease_name := disease_rec.disease_name;
 
@@ -24,7 +23,7 @@ END;
 -- Insert a new patient record with default values for the doctor and disease.
 SET SERVEROUTPUT ON
 DECLARE
-    v_patient_id patient.patient_id%TYPE := 21;
+    v_patient_id patient.patient_id%TYPE := 22;
     v_patient_name patient.patient_name%TYPE := 'John Doe';
     v_patient_dob patient.patient_dob%TYPE := TO_DATE('1990-01-01', 'YYYY-MM-DD');
     v_patient_city patient.patient_city%TYPE := 'New York';
@@ -60,7 +59,7 @@ BEGIN
 END;
 /
 
---Array
+--Count the number of medicine in a medicine_id range using Array
 set serveroutput on
 declare 
   counter number;
@@ -124,7 +123,7 @@ BEGIN
 END;
 /
 
---Running the previous procedure
+--Running the procedure
 BEGIN
   categorize_patients;
 END;
@@ -133,5 +132,3 @@ END;
 
 --Dropping the procedure 
 drop procedure categorize_patients;
-
-
