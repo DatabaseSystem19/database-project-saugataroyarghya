@@ -12,49 +12,49 @@ INSERT INTO disease (disease_id, disease_name, disease_type) VALUES (10, 'Bronch
 
 
 -- Inserting dummy data into the "doctor" table
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES (1, 1, 'Dr. Smith', 1234567890, 'New York');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(2, 2, 'Dr. Johnson', 9876543210, 'Los Angeles');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(3, 3, 'Dr. Lee', 5555555555, 'Chicago');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(4, 4, 'Dr. Williams', 9998887777, 'San Francisco');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(5, 5, 'Dr. Brown', 1112223333, 'Houston');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(6, 6, 'Dr. Taylor', 4445556666, 'Miami');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(7, 7, 'Dr. Davis', 7778889999, 'Seattle');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(8, 8, 'Dr. Miller', 6667778888, 'Boston');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(9, 9, 'Dr. Wilson', 2223334444, 'Denver');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(10, 10, 'Dr. Anderson', 8889990000, 'Dallas');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES (1, 1, 'Dr. Thibo', 1234567890, 'New York');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(2, 2, 'Dr. Lunin', 9876543210, 'Los Angeles');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(3, 3, 'Dr. Navas', 5555555555, 'Chicago');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(4, 4, 'Dr. Carvjal', 9998887777, 'Dhaka');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(5, 5, 'Dr. Odriozola', 1112223333, 'Houston');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(6, 6, 'Dr. Vinicius', 4445556666, 'Miami');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(7, 7, 'Dr. Neymar', 7778889999, 'Seattle');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(8, 8, 'Dr. Casemiro', 6667778888, 'Boston');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(9, 9, 'Dr. Ceballos', 2223334444, 'Denver');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(10, 10, 'Dr. Valvarde', 8889990000, 'Dallas');
 INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(11, 1, 'Dr. Clark', 4444444444, 'New York');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(12, 2, 'Dr. Martinez', 5555555555, 'Los Angeles');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(13, 3, 'Dr. Turner', 6666666666, 'Chicago');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(14, 4, 'Dr. Taylor', 7777777777, 'San Francisco');
-INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(15, 5, 'Dr. Lewis', 8888888888, 'Houston');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(12, 1, 'Dr. Martinez', 5555555555, 'Los Angeles');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(13, 1, 'Dr. Turner', 6666666666, 'Chicago');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(14, 1, 'Dr. Taylor', 7777777777, 'Dhaka');
+INSERT INTO doctor (doctor_id, disease_id, doctor_name, doctor_cntc, doctor_city) VALUES(15, 1, 'Dr. Marcelo', 8888888888, 'Houston');
 
 -- Inserting dummy data into the "patient" table
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (1, 1, 1, 'John Doe', TO_DATE('2001-01-01', 'YYYY-MM-DD'), 'New York');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (2, 2, 2, 'Jane Smith',TO_DATE('1900-05-10', 'YYYY-MM-DD'), 'Los Angeles');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (1, 1, 1, 'Cristiano Ronaldo', TO_DATE('2001-05-16', 'YYYY-MM-DD'), 'New York');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (2, 2, 2, 'Toni Kroos',TO_DATE('1900-05-10', 'YYYY-MM-DD'), 'Los Angeles');
 INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (3, 3, 3, 'Michael Johnson',TO_DATE('1978-12-15', 'YYYY-MM-DD'), 'Chicago');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (4, 4, 4, 'Emily Williams',TO_DATE('1995-08-20', 'YYYY-MM-DD'), 'San Francisco');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (5, 5, 5, 'Daniel Brown',TO_DATE('1982-04-05', 'YYYY-MM-DD'), 'Houston');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (6, 6, 6, 'Olivia Taylor',TO_DATE('1992-11-30', 'YYYY-MM-DD'), 'Miami');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (7, 7, 7, 'Sophia Davis',TO_DATE('1975-07-18', 'YYYY-MM-DD'), 'Seattle');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (8, 8, 8, 'William Miller',TO_DATE('1988-03-25', 'YYYY-MM-DD'), 'Boston');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (9, 9, 9, 'James Wilson', TO_DATE('2005-06-12', 'YYYY-MM-DD'), 'Denver');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (10, 10, 10, 'Liam Anderson', TO_DATE('1994-09-08', 'YYYY-MM-DD'), 'Dallas');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (11, 11, 1, 'Emma Clark', TO_DATE('1993-02-14', 'YYYY-MM-DD'), 'New York');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (12, 12, 1, 'Alexander Martinez', TO_DATE('1979-11-27', 'YYYY-MM-DD'), 'Los Angeles');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (13, 13, 1, 'Grace Turner', TO_DATE('1987-07-07', 'YYYY-MM-DD'), 'Chicago');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (14, 14, 1, 'Sophia Taylor', TO_DATE('1991-04-18', 'YYYY-MM-DD'), 'San Francisco');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (15, 15, 1, 'Logan Lewis', TO_DATE('1927-09-30', 'YYYY-MM-DD'), 'Houston');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (16, 1, 3, 'Oliver Johnson', TO_DATE('1997-12-08', 'YYYY-MM-DD'), 'New York');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (17, 2, 3, 'Mia Rodriguez', TO_DATE('1984-06-22', 'YYYY-MM-DD'), 'Los Angeles');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (4, 4, 4, 'Emily Williams',TO_DATE('1995-08-20', 'YYYY-MM-DD'), 'Dhaka');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (5, 5, 5, 'Dan Brown',TO_DATE('1982-04-05', 'YYYY-MM-DD'), 'Houston');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (6, 6, 6, 'Luke Modric',TO_DATE('1992-11-30', 'YYYY-MM-DD'), 'Miami');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (7, 7, 7, 'Alphonso Davias',TO_DATE('1975-07-18', 'YYYY-MM-DD'), 'Seattle');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (8, 8, 8, 'Jaoa Felix',TO_DATE('1988-03-25', 'YYYY-MM-DD'), 'Boston');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (9, 9, 9, 'Declan Rice', TO_DATE('2005-06-12', 'YYYY-MM-DD'), 'Denver');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (10, 10, 10, 'Lionel Messi', TO_DATE('1994-09-08', 'YYYY-MM-DD'), 'Dallas');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (11, 11, 1, 'Emilia Clark', TO_DATE('1993-02-14', 'YYYY-MM-DD'), 'New York');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (12, 12, 1, 'Harry Kane', TO_DATE('1979-11-27', 'YYYY-MM-DD'), 'Los Angeles');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (13, 13, 1, 'Taylor Swift', TO_DATE('1987-07-07', 'YYYY-MM-DD'), 'Chicago');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (14, 14, 1, 'Paul Pogba', TO_DATE('1991-04-18', 'YYYY-MM-DD'), 'Dhaka');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (15, 15, 1, 'Jude Bellingham', TO_DATE('1927-09-30', 'YYYY-MM-DD'), 'Houston');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (16, 1, 1, 'Oliver Johnson', TO_DATE('1997-12-08', 'YYYY-MM-DD'), 'New York');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (17, 2, 2, 'James Rodriguez', TO_DATE('1984-06-22', 'YYYY-MM-DD'), 'Los Angeles');
 INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (18, 3, 3, 'Lucas Anderson', TO_DATE('1990-03-16', 'YYYY-MM-DD'), 'Chicago');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (19, 4, 3, 'Ava Moore', TO_DATE('1981-08-11', 'YYYY-MM-DD'), 'San Francisco');
-INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (20, 5, 3, 'Charlotte Wilson', TO_DATE('1996-05-05', 'YYYY-MM-DD'), 'Houston');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (19, 4, 4, 'Harry Kane', TO_DATE('1981-08-11', 'YYYY-MM-DD'), 'Dhaka');
+INSERT INTO patient (patient_id, doctor_id, disease_id, patient_name, patient_dob, patient_city) VALUES (20, 5, 5, 'Jon Snow', TO_DATE('1996-05-05', 'YYYY-MM-DD'), 'Houston');
 
 -- Inserting dummy data into the "hospital" table
 INSERT INTO hospital (hospital_id, hospital_name, hospital_capacity, hospital_city) VALUES (1, 'ABC Hospital', 200, 'New York');
 INSERT INTO hospital (hospital_id, hospital_name, hospital_capacity, hospital_city) VALUES(2, 'XYZ Medical Center', 150, 'Los Angeles');
 INSERT INTO hospital (hospital_id, hospital_name, hospital_capacity, hospital_city) VALUES(3, 'City General Hospital', 300, 'Chicago');
-INSERT INTO hospital (hospital_id, hospital_name, hospital_capacity, hospital_city) VALUES(4, 'Sunset Medical Center', 100, 'San Francisco');
+INSERT INTO hospital (hospital_id, hospital_name, hospital_capacity, hospital_city) VALUES(4, 'Sunset Medical Center', 100, 'Dhaka');
 
 -- Inserting dummy data into the "employ" table
 INSERT INTO employ (doctor_id, hospital_id) VALUES (1, 1);
@@ -192,7 +192,5 @@ WHERE di.disease_type = 'Chronic';
 
 --Delete the "patient_view" view.
 DROP VIEW patient_view;
-
-
 
 commit;
