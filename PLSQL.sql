@@ -7,7 +7,8 @@ DECLARE
     v_disease_name disease.disease_name%TYPE;
     v_avg_price NUMBER(8,2);
 BEGIN
-    FOR disease_rec IN c_diseases LOOP
+    FOR disease_rec IN c_diseases LOOP;
+    .3
         v_disease_id := disease_rec.disease_id;
         v_disease_name := disease_rec.disease_name;
 
@@ -27,7 +28,7 @@ DECLARE
     v_patient_name patient.patient_name%TYPE := 'John Doe';
     v_patient_dob patient.patient_dob%TYPE := TO_DATE('1990-01-01', 'YYYY-MM-DD');
     v_patient_city patient.patient_city%TYPE := 'New York';
-    v_patient_disease patient.disease_id%TYPE := 2;
+    v_patient_disease patient. disease_id%TYPE := 2;
 BEGIN
     INSERT INTO patient (patient_id, patient_name, disease_id, patient_dob, patient_city)
     VALUES (v_patient_id, v_patient_name, v_patient_disease, v_patient_dob, v_patient_city);
@@ -57,6 +58,31 @@ BEGIN
     END LOOP;
     CLOSE c_doctors;
 END;
+/
+
+--Array
+set serveroutput on
+declare 
+  counter number;
+  med_name medicine.medicine_name%type;
+  TYPE ARRA IS VARRAY(5) OF medicine.medicine_name%type; 
+  ARR_NAME ARRA:=ARRA();
+begin
+  counter:=1;
+  for x in 8..12 
+  loop
+    select medicine_name into med_name from medicine where medicine_id=x;
+    ARR_NAME.EXTEND();
+    ARR_NAME(counter):=med_name;
+    counter:=counter+1;
+  end loop;
+  counter:=1;
+  WHILE counter<=ARR_NAME.COUNT 
+    LOOP 
+    DBMS_OUTPUT.PUT_LINE(ARR_NAME(counter)); 
+    counter:=counter+1;
+  END LOOP;
+end;
 /
 
 --Increase the hospital capacity by 10% for hospitals with a capacity less than 100.
@@ -107,3 +133,5 @@ END;
 
 --Dropping the procedure 
 drop procedure categorize_patients;
+
+
